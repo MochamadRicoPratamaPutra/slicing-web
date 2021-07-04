@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="script.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="aset/css/style-seller-order.css">
+    <title>Profile</title>
+</head>
+<body>
+    <!-- Navbar with profile ================================================================================================ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="home-with-profile.html"><img src="aset/gambar/Group 1159.svg" alt="Blanja"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="filter-search">
+                    <form class="form-inline my-2 my-lg-0 ml-3">
+                        <input class="form-control search-bar mr-sm-2" type="search" placeholder="Search" aria-label="Search">    
+                    </form>
+                    <button class="btn btn-filter my-sm-0" type="submit" data-toggle="modal" data-target="#modal-filter"><img class="filter" src="aset/gambar/Vector.svg" alt=""></button>
+                </div>
+                <ul class="navbar-nav nav-list ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="my-bag.html"><img src="aset/gambar/shopping-cart.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="aset/gambar/bell.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="aset/gambar/mail.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="profile.html"><img class="profile-navbar" src="aset/gambar/christian-buehner-DItYlc26zVI-unsplash 1.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal Navbar ================================================================================================= -->
+    <div class="modal fade" id="modal-filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Filter</h5>
+                <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="title-section">Colors</h3>
+                    <div class="color-choice">
+                        <input type="checkbox" class="checkmark color-modal-1">
+                        <input type="checkbox" class="checkmark color-modal-2">
+                        <input type="checkbox" class="checkmark color-modal-3">
+                        <input type="checkbox" class="checkmark color-modal-4">
+                        <input type="checkbox" class="checkmark color-modal-5">
+                    </div>
+                    <h3 class="title-section">Sizes</h3>
+                    <div class="size-choice">
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-1'><label class='string-check-box size-check-box-1' for="size-check-1">XS</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-2'><label class='string-check-box size-check-box-2' for="size-check-2">S</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-3'><label class='string-check-box size-check-box-3' for="size-check-3">M</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-4'><label class='string-check-box size-check-box-4' for="size-check-4">L</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-5'><label class='string-check-box size-check-box-5' for="size-check-5">XL</label>
+                    </div>
+                    <h3 class="title-section">Category</h3>
+                    <div class="category-modal">
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-1'><label class='string-check-box category-check-box-1' for="category-check-1">All</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-2'><label class='string-check-box category-check-box-2' for="category-check-2">Women</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-3'><label class='string-check-box category-check-box-3' for="category-check-3">Men</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-4'><label class='string-check-box category-check-box-4' for="category-check-4">Girl</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-5'><label class='string-check-box category-check-box-5' for="category-check-5">Boy</label>
+                    </div>
+                    <div class="brand-modal">
+                        <div class="brand-header-text">
+                            <h3 class="brand-section">Brand</h3>
+                            <p class="brand-category">adidas Originals, Jack & Jones, s.Oliver</p>
+                        </div>
+                        <button class="btn btn-brand-category" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="aset/gambar/colapseLogo.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <input type="checkbox" id="brand1" name="brand1" value="Bike">
+                        <label for="brand1"> Adidas Originals</label><br>
+                        <input type="checkbox" id="brand2" name="brand2" value="Car">
+                        <label for="brand2"> Jack & Jones</label><br>
+                        <input type="checkbox" id="brand3" name="brand3" value="Boat">
+                        <label for="brand3"> s.Oliver</label><br>
+                    </div>
+                </div>
+                <div class="modal-footer modal-confirm">
+                    <button type="button" class="btn btn-modal-discard btn-secondary" data-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-modal-apply btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================================================================================== -->
+    <div class="row no-gutter mt-0 nav-vertical">
+        <div class="col-md-3 background-nav-ver mt-2 pr-3 pt-4">
+            <ul class="nav flex-column ml-3 mb-5">
+                <li class="nav-item">
+                    <div class="nav-link mb-5 profile-nav" aria-current="page">
+                        <img class="profile-image" src="aset/gambar/christian-buehner-DItYlc26zVI-unsplash 1.png" alt="">
+                        <div class="profile-name">
+                            <a class="nav-vertical-title active-page" href="profile.html">Jonas Mikael</a>
+                            <div class="editing-profile">
+                                <img src="aset/gambar/pen-profile.png" alt="">
+                                <a href="#" class="edit-profile">Ubah profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <div class="box-sub-naver">
+                        <div class="box-sub">
+                            <img class="box-image-profile color-box-1" src="aset/gambar/home.svg" alt="">
+                            <a class="nav-link nav-vertical-title" href="profile-seller.html">Store</a>
+                        </div>                        
+                        <div class="collapse-box-sub">
+                            <button class="btn btn-user-category" type="button" data-toggle="collapse" data-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser">
+                                <img src="aset/gambar/colapseLogo.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseUser">
+                        <a href="profile-seller.html" class="collapse-nav-ver box-sub-naver nav-vertical-title">Store Profile</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="box-sub-naver">
+                        <div class="box-sub">
+                            <img class="box-image-profile color-box-2" src="aset/gambar/product.svg" alt="">
+                            <a class="nav-link nav-vertical-title" href="profile-seller-my-product.html">Product</a>    
+                        </div>
+                        <button class="btn btn-product-category" type="button" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+                            <img src="aset/gambar/colapseLogo.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="collapse" id="collapseProduct">
+                        <a href="profile-seller-my-product.html" class="collapse-nav-ver box-sub-naver nav-vertical-title">My product</a>
+                        <a href="profile-seller-selling-product.html" class="collapse-nav-ver box-sub-naver nav-vertical-title">Selling product</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="box-sub-naver">
+                        <div class="box-sub">
+                            <img class="box-image-profile color-box-3" src="aset/gambar/shopping-cart-seller.svg" alt="">
+                            <a class="nav-link nav-vertical-title active-page" href="profile-seller-order.html" tabindex="-1" aria-disabled="true">Order</a>
+                        </div>
+                        <button class="btn btn-order-category" type="button" data-toggle="collapse" data-target="#collapseOrder" aria-expanded="false" aria-controls="collapseOrder">
+                            <img src="aset/gambar/colapseLogo.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="collapse" id="collapseOrder">
+                        <a href="profile-seller-order.html" class="collapse-nav-ver box-sub-naver nav-vertical-title">My order</a>
+                        <a href="profile-seller-order-cancel.html" class="collapse-nav-ver box-sub-naver nav-vertical-title active-page">Order cancel</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9 main-page">
+            <div class="main-profile">
+                <p class="main-profile-title">My Order</p>
+                <ul class="tabs">
+                    <li data-tab-target="#allItem" class="tab">All item</li>
+                    <li data-tab-target="#paid" class="tab">Get paid</li>
+                    <li data-tab-target="#proceed" class="tab">Proceed</li>
+                    <li data-tab-target="#sent" class="tab">Sent</li>
+                    <li data-tab-target="#completed" class="tab">Completed</li>
+                    <li data-tab-target="#cancel" class="active tab">Order cancel</li>
+                </ul>
+                
+                <div class="tab-content">
+                    <div id="allItem" data-tab-content >
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="text" name="search" placeholder="Search" id="searchBox" class="search-box-content form-control">
+                            </div>
+                        </div>
+                        <div class="content-order">
+                            <img class="isi" src="aset/gambar/undraw_respond_8wjt 1.svg" alt="">
+                            <p class="content-sub-title isi">There are no order yet</p>
+                        </div>
+                    </div>
+                    <div id="paid" data-tab-content>
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="text" name="search" placeholder="Search" id="searchBox" class="search-box-content form-control">
+                            </div>
+                        </div>
+                        <div class="content-order">
+                            <img class="isi" src="aset/gambar/undraw_respond_8wjt 1.svg" alt="">
+                            <p class="content-sub-title isi">There are no order yet</p>
+                        </div>
+                    </div>
+                    <div id="proceed" data-tab-content>
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="text" name="search" placeholder="Search" id="searchBox" class="search-box-content form-control">
+                            </div>
+                        </div>
+                        <div class="content-order">
+                            <img class="isi" src="aset/gambar/undraw_respond_8wjt 1.svg" alt="">
+                            <p class="content-sub-title isi">There are no order yet</p>
+                        </div>
+                    </div>
+                    <div id="sent" data-tab-content>
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="text" name="search" placeholder="Search" id="searchBox" class="search-box-content form-control">
+                            </div>
+                        </div>
+                        <div class="content-order">
+                            <img class="isi" src="aset/gambar/undraw_respond_8wjt 1.svg" alt="">
+                            <p class="content-sub-title isi">There are no order yet</p>
+                        </div>
+                    </div>
+                    <div id="completed" data-tab-content>
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="text" name="search" placeholder="Search" id="searchBox" class="search-box-content form-control">
+                            </div>
+                        </div>
+                        <div class="content-order">
+                            <img class="isi" src="aset/gambar/undraw_respond_8wjt 1.svg" alt="">
+                            <p class="content-sub-title isi">There are no order yet</p>
+                        </div>
+                    </div>
+                    <div id="cancel" data-tab-content class="active">
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="text" name="search" placeholder="Search" id="searchBox" class="search-box-content form-control">
+                            </div>
+                        </div>
+                        <div class="content-order">
+                            <img class="isi" src="aset/gambar/undraw_respond_8wjt 1.svg" alt="">
+                            <p class="content-sub-title isi">There are no order yet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

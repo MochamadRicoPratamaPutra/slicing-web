@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="aset/css/style-profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <!-- Navbar with profile ================================================================================================ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="home-with-profile.html"><img src="aset/gambar/Group 1159.svg" alt="Blanja"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="filter-search">
+                    <form class="form-inline my-2 my-lg-0 ml-3">
+                        <input class="form-control search-bar mr-sm-2" type="search" placeholder="Search" aria-label="Search">    
+                    </form>
+                    <button class="btn btn-filter my-sm-0" type="submit" data-toggle="modal" data-target="#modal-filter"><img class="filter" src="aset/gambar/Vector.svg" alt=""></button>
+                </div>
+                <ul class="navbar-nav nav-list ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="my-bag.html"><img src="aset/gambar/shopping-cart.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="aset/gambar/bell.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="aset/gambar/mail.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="profile.html"><img class="profile-navbar" src="aset/gambar/christian-buehner-DItYlc26zVI-unsplash 1.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal Navbar ================================================================================================= -->
+    <div class="modal fade" id="modal-filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Filter</h5>
+                <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="title-section">Colors</h3>
+                    <div class="color-choice">
+                        <input type="checkbox" class="checkmark color-modal-1">
+                        <input type="checkbox" class="checkmark color-modal-2">
+                        <input type="checkbox" class="checkmark color-modal-3">
+                        <input type="checkbox" class="checkmark color-modal-4">
+                        <input type="checkbox" class="checkmark color-modal-5">
+                    </div>
+                    <h3 class="title-section">Sizes</h3>
+                    <div class="size-choice">
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-1'><label class='string-check-box size-check-box-1' for="size-check-1">XS</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-2'><label class='string-check-box size-check-box-2' for="size-check-2">S</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-3'><label class='string-check-box size-check-box-3' for="size-check-3">M</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-4'><label class='string-check-box size-check-box-4' for="size-check-4">L</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-5'><label class='string-check-box size-check-box-5' for="size-check-5">XL</label>
+                    </div>
+                    <h3 class="title-section">Category</h3>
+                    <div class="category-modal">
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-1'><label class='string-check-box category-check-box-1' for="category-check-1">All</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-2'><label class='string-check-box category-check-box-2' for="category-check-2">Women</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-3'><label class='string-check-box category-check-box-3' for="category-check-3">Men</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-4'><label class='string-check-box category-check-box-4' for="category-check-4">Girl</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-5'><label class='string-check-box category-check-box-5' for="category-check-5">Boy</label>
+                    </div>
+                    <div class="brand-modal">
+                        <div class="brand-header-text">
+                            <h3 class="brand-section">Brand</h3>
+                            <p class="brand-category">adidas Originals, Jack & Jones, s.Oliver</p>
+                        </div>
+                        <button class="btn btn-brand-category" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="aset/gambar/colapseLogo.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Adidas Originals</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Jack & Jones</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> s.Oliver</label><br>
+                    </div>
+                </div>
+                <div class="modal-footer modal-confirm">
+                    <button type="button" class="btn btn-modal-discard btn-secondary" data-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-modal-apply btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================================================================================== -->
+    <div class="row no-gutter mt-0 nav-vertical">
+        <div class="col-md-3 background-nav-ver mt-2 pr-3 pt-4">
+            <ul class="nav flex-column ml-3 mb-5">
+                <li class="nav-item">
+                    <div class="nav-link mb-5 profile-nav" aria-current="page">
+                        <img class="profile-image" src="aset/gambar/christian-buehner-DItYlc26zVI-unsplash 1.png" alt="">
+                        <div class="profile-name">
+                            <a class="nav-vertical-title active-page" href="profile.html">Jonas Mikael</a>
+                            <div class="editing-profile">
+                                <img src="aset/gambar/pen-profile.png" alt="">
+                                <a href="#" class="edit-profile">Ubah profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <div class="box-sub-naver">
+                        <img class="box-image-profile color-box-1" src="aset/gambar/user 1.svg" alt="">
+                        <a class="nav-link nav-vertical-title active-page" href="profile.html">My Account</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="box-sub-naver">
+                        <img class="box-image-profile color-box-2" src="aset/gambar/map-pin (3) 1.svg" alt="">
+                        <a class="nav-link nav-vertical-title" href="profile-address.html">Shipping & address</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="box-sub-naver">
+                        <img class="box-image-profile color-box-3" src="aset/gambar/clipboard 1.svg" alt="">
+                        <a class="nav-link nav-vertical-title" href="profile-order.html" tabindex="-1" aria-disabled="true">My order</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9 main-page">
+            <main class="main-profile">
+                <p class="main-profile-title">My Profile</p>
+                <p class="main-profile-sub-title">Manage your profile information</p>
+                <hr class="hr-margin">
+                <section class="main-profile-data">
+                    <section class="biodata">
+                        <div class="row mb-4">
+                            <div class="col">
+                                <label class="main-profile-sub-title " for="name">Name</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" name="name" id="name" placeholder="Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <label class="main-profile-sub-title " for="name">Email</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" name="email" id="name" placeholder="Email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <label class="main-profile-sub-title " for="name">Phone Number</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" name="phoneNumber" id="name" placeholder="Phone number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <p class="main-profile-sub-title ">Gender</p>
+                            </div>
+                            <div class="row mr-auto">
+                                <div class="col">
+                                    <input class="form-check-input" type="radio" name="gender-choices" id="lakiLaki">
+                                    <label class="form-check-label" for="lakiLaki">
+                                        Laki-laki
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input class="form-check-input" type="radio" name="gender-choices" id="perempuan">
+                                    <label class="form-check-label" for="perempuan">
+                                        Perempuan
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="main-profile-sub-title ">Date of birth</p>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <select id="dateBirth" name="dateOfBirth">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>                                  
+                                </div>
+                                <div class="col">
+                                    <select id="monthBirth" name="dateOfBirth">
+                                        <option value="january">January</option>
+                                        <option value="february">February</option>
+                                        <option value="march">March</option>
+                                        <option value="april">April</option>
+                                        <option value="may">May</option>
+                                        <option value="juny">Juny</option>
+                                        <option value="july">July</option>
+                                        <option value="august">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <select id="yearBirth" name="dateOfBirth">
+                                        <option value="1990">1990</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="save-profile mr-auto ml-auto mt-5">Save</button>
+                    </section>
+                    <section class="photo-profile">
+                        <img src="aset/gambar/christian-buehner-DItYlc26zVI-unsplash 1.png" alt="">
+                        <button type="button" class="main-profile-sub-title selecting-image">Select image</button>
+                    </section>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

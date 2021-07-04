@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="aset/css/style-page-product.css">
+    <title>Product Page</title>
+  </head>
+  <body>
+    <!-- Navbar ================================================================================================ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="home.html"><img src="aset/gambar/Group 1159.svg" alt="Blanja"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="filter-search">
+                    <form class="form-inline my-2 my-lg-0 ml-1 ml-5">
+                        <input class="form-control search-bar mr-sm-2" type="search" placeholder="Search" aria-label="Search">    
+                    </form>
+                    <button class="btn btn-filter my-sm-0" type="submit" data-toggle="modal" data-target="#modal-filter"><img class="filter" src="aset/gambar/Vector.svg" alt=""></button>
+                </div>
+                <ul class="navbar-nav nav-list ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link mr-0 mr-3" href="#"><img src="aset/gambar/shopping-cart.svg" alt=""><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-0 mr-2">
+                        <a href="login-customer.html" class="nav-link login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signup-customer.html" class="nav-link signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal ================================================================================================= -->
+    <div class="modal fade" id="modal-filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Filter</h5>
+                <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="title-section">Colors</h3>
+                    <div class="color-choice">
+                        <input type="checkbox" class="checkmark color-modal-1">
+                        <input type="checkbox" class="checkmark color-modal-2">
+                        <input type="checkbox" class="checkmark color-modal-3">
+                        <input type="checkbox" class="checkmark color-modal-4">
+                        <input type="checkbox" class="checkmark color-modal-5">
+                    </div>
+                    <h3 class="title-section">Sizes</h3>
+                    <div class="size-choice">
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-1'><label class='string-check-box size-check-box-1' for="size-check-1">XS</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-2'><label class='string-check-box size-check-box-2' for="size-check-2">S</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-3'><label class='string-check-box size-check-box-3' for="size-check-3">M</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-4'><label class='string-check-box size-check-box-4' for="size-check-4">L</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-5'><label class='string-check-box size-check-box-5' for="size-check-5">XL</label>
+                    </div>
+                    <h3 class="title-section">Category</h3>
+                    <div class="category-modal">
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-1'><label class='string-check-box category-check-box-1' for="category-check-1">All</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-2'><label class='string-check-box category-check-box-2' for="category-check-2">Women</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-3'><label class='string-check-box category-check-box-3' for="category-check-3">Men</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-4'><label class='string-check-box category-check-box-4' for="category-check-4">Girl</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-5'><label class='string-check-box category-check-box-5' for="category-check-5">Boy</label>
+                    </div>
+                    <div class="brand-modal">
+                        <div class="brand-header-text">
+                            <h3 class="brand-section">Brand</h3>
+                            <p class="brand-category">adidas Originals, Jack & Jones, s.Oliver</p>
+                        </div>
+                        <button class="btn btn-brand-category" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="aset/gambar/colapseLogo.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Adidas Originals</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Jack & Jones</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> s.Oliver</label><br>
+                    </div>
+                </div>
+                <div class="modal-footer modal-confirm">
+                    <button type="button" class="btn btn-modal-discard btn-secondary" data-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-modal-apply btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================================================================================== -->
+    <main class="container">
+        <p class="directory"><span><a href="home.html" class="directory">Home</a></span> > <span><a href="category-page.html" class="directory">Category</a></span> > Shirt</p>
+        <div class="content">
+            <div class="photo">
+                <img class="main-photo" src="aset/gambar/Baju1.jpg" alt="">
+                <div class="side">
+                    <img src="aset/gambar/Baju2.jpg" alt="" class="side-photo">
+                    <img src="aset/gambar/Baju3.jpg" alt="" class="side-photo">
+                    <img src="aset/gambar/Baju1.jpg" alt="" class="side-photo">
+                    <img src="aset/gambar/baju4.jpg" alt="" class="side-photo">
+                    <img src="aset/gambar/baju5.jpg" alt="" class="side-photo">
+                </div>
+            </div>
+            <div class="description">
+                <h2 class="product-name">Baju Muslim Pria</h2>
+                <p class="brand">Zalora Cloth</p>
+                <div class="review">
+                    <img class="star" src="aset/gambar/Star.png" alt="...">
+                    <img class="star" src="aset/gambar/Star.png" alt="...">
+                    <img class="star" src="aset/gambar/Star.png" alt="...">
+                    <img class="star" src="aset/gambar/Star.png" alt="...">
+                    <img class="star" src="aset/gambar/Star.png" alt="...">
+                    <p class="score">(10)</p>
+                </div>
+                <p class="brand">Price</p>
+                <p class="price-value">$ 20.0</p>
+                <p class="misc">Color</p>
+                <div class="color-choice">
+                    <input type="radio" name="radioColorProduct" class="checkmark color1">
+                    <input type="radio" name="radioColorProduct" class="checkmark color2">
+                    <input type="radio" name="radioColorProduct" class="checkmark color3">
+                    <input type="radio" name="radioColorProduct" class="checkmark color4">
+                </div>
+                <div class="container-size-jumlah">
+                    <div class="row">
+                        <div class="col">
+                            <p class="misc">Size</p>
+                        </div>
+                        <div class="col">
+                            <p class="misc">Jumlah</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col sizing">
+                            <div class="minus-box col-margin">
+                                <img class='gambar-indikator-minus'src="aset/gambar/minus (2).svg" alt="">
+                            </div>
+                            <p class="size-text col-margin">28</p>
+                            <div class="plus-box col-margin">
+                                <img class='gambar-indikator-plus'src="aset/gambar/plus.svg" alt="">
+                            </div>                            
+                        </div>
+                        <div class="col sizing">
+                            <div class="minus-box col-margin">
+                                <img class='gambar-indikator-minus'src="aset/gambar/minus (2).svg" alt="">
+                            </div>
+                            <p class="size-text col-margin">1</p>
+                            <div class="plus-box col-margin">
+                                <img class='gambar-indikator-plus'src="aset/gambar/plus.svg" alt="">
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="choice">
+                    <a href="#" class="product">Chat</a>
+                    <a href="#" class="product">Add bag</a>
+                    <a href="#" class="product product-buy">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="information">
+            <p class="information-title">Informasi Produk</p>
+            <p class="misc-2">Condition</p>
+            <p class="condition-product">New</p>
+            <p class="misc-2">Description</p>
+            <article class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vitae ab voluptatem sint et omnis tempore dolorum obcaecati totam quos, numquam sequi officia, ipsum iusto corporis voluptates earum commodi ipsa. Deserunt itaque id dolorum veritatis et ipsam sit adipisci nemo consequuntur asperiores perferendis, nesciunt expedita modi porro architecto, autem natus similique! Ipsum distinctio explicabo reiciendis sunt corrupti nemo iste quis non tempora nesciunt quidem nostrum quos a similique dolorem omnis, aliquam voluptatem perferendis quia eos. Beatae rem quia obcaecati autem quaerat, nemo iusto repellendus voluptatum ipsa ratione explicabo asperiores cum excepturi voluptatibus porro ipsam totam nulla. Culpa quo iure odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                Donec non magna rutrum, pellentesque augue eu, sagittis velit. Phasellus quis laoreet dolor. Fusce nec pharetra quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed enim vel turpis blandit imperdiet ac ac felis. Etiam tincidunt tristique placerat. Pellentesque a consequat mauris, vel suscipit ipsum. 
+                Donec ac mauris vitae diam commodo vehicula. Donec quam elit, sollicitudin eu nisl at, ornare suscipit magna.
+                
+                Donec non magna rutrum, pellentesque augue eu, sagittis velit. Phasellus quis laoreet dolor. Fusce nec pharetra quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed enim vel turpis blandit imperdiet ac ac felis.
+                
+                In ultricies rutrum tempus. Mauris vel molestie orci.
+            </article>
+        </div>
+        <div class="review-product mt-3">
+            <p class="information-title">Product Review</p>
+            <div class="review-box">
+                <div class="score-box">
+                    <p class="score-review-total">5.0<span class="total-score-review">/10</span></p>
+                    <div class="score-star">
+                        <img class="star-for-review" src="aset/gambar/Star.svg" alt="">
+                        <img class="star-for-review" src="aset/gambar/Star.svg" alt="">
+                        <img class="star-for-review" src="aset/gambar/Star.svg" alt="">
+                        <img class="star-for-review" src="aset/gambar/Star.svg" alt="">
+                        <img class="star-for-review" src="aset/gambar/Star.svg" alt="">
+                    </div>
+                </div>
+                <div class="total-review">
+                    <div class="score-per-review">
+                        <img class="star-score-per-review margining-review" src="aset/gambar/Star.svg" alt="">
+                        <p class="score-review margining-review">5</p>
+                        <div class="progress margining-review">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="score-review margining-review">4</p>
+                    </div>
+                    <div class="score-per-review">
+                        <img class="star-score-per-review margining-review" src="aset/gambar/Star.svg" alt="">
+                        <p class="score-review margining-review">4</p>
+                        <div class="progress margining-review">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="score-review margining-review">0</p>
+                    </div>
+                    <div class="score-per-review">
+                        <img class="star-score-per-review margining-review" src="aset/gambar/Star.svg" alt="">
+                        <p class="score-review margining-review">3</p>
+                        <div class="progress margining-review">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="score-review margining-review">0</p>
+                    </div>
+                    <div class="score-per-review">
+                        <img class="star-score-per-review margining-review" src="aset/gambar/Star.svg" alt="">
+                        <p class="score-review margining-review">2</p>
+                        <div class="progress margining-review">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="score-review margining-review">0</p>
+                    </div>
+                    <div class="score-per-review">
+                        <img class="star-score-per-review margining-review" src="aset/gambar/Star.svg" alt="">
+                        <p class="score-review margining-review">1</p>
+                        <div class="progress margining-review">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="score-review margining-review">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="another-product">
+            <h1 class="category">You can also like this</h1>
+            <p class="category">You've never seen it before</p>
+        </div>
+        <main class="container-card">
+            <div class="row row-cols-1 row-cols-5 mt-4">
+                <div class="col box-column mb-3">
+                    <a class="card-link" href="product-page.html"><div class="card mb-3">
+                        <img src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title-box">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            </div>
+                            <div class="price">
+                                <p class="card-text">$40.0</p>
+                            </div>
+                            <div class="bran">
+                                <p class="card-text brand">Zalora Cloth</p>
+                            </div>
+                            <div class="review">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <p class="score">(10)</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col box-column">
+                    <a class="card-link" href="product-page.html"><div class="card mb-3">
+                        <img src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title-box">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            </div>
+                            <div class="price">
+                                <p class="card-text">$40.0</p>
+                            </div>
+                            <div class="bran">
+                                <p class="card-text brand">Zalora Cloth</p>
+                            </div>
+                            <div class="review">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <p class="score">(10)</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col box-column">
+                    <a class="card-link" href="product-page.html"><div class="card mb-3">
+                        <img src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title-box">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            </div>
+                            <div class="price">
+                                <p class="card-text">$40.0</p>
+                            </div>
+                            <div class="bran">
+                                <p class="card-text brand">Zalora Cloth</p>
+                            </div>
+                            <div class="review">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <p class="score">(10)</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col box-column">
+                    <a class="card-link" href="product-page.html"><div class="card mb-3">
+                        <img src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title-box">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            </div>
+                            <div class="price">
+                                <p class="card-text">$40.0</p>
+                            </div>
+                            <div class="bran">
+                                <p class="card-text brand">Zalora Cloth</p>
+                            </div>
+                            <div class="review">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <p class="score">(10)</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col box-column">
+                    <a class="card-link" href="product-page.html"><div class="card mb-3">
+                        <img src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title-box">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            </div>
+                            <div class="price">
+                                <p class="card-text">$40.0</p>
+                            </div>
+                            <div class="bran">
+                                <p class="card-text brand">Zalora Cloth</p>
+                            </div>
+                            <div class="review">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <p class="score">(10)</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col box-column">
+                    <a class="card-link" href="product-page.html"><div class="card mb-3">
+                        <img src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title-box">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            </div>
+                            <div class="price">
+                                <p class="card-text">$40.0</p>
+                            </div>
+                            <div class="bran">
+                                <p class="card-text brand">Zalora Cloth</p>
+                            </div>
+                            <div class="review">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <p class="score">(10)</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col box-column">
+                    <a class="card-link" href="product-page.html"><div class="card mb-3">
+                        <img src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title-box">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            </div>
+                            <div class="price">
+                                <p class="card-text">$40.0</p>
+                            </div>
+                            <div class="bran">
+                                <p class="card-text brand">Zalora Cloth</p>
+                            </div>
+                            <div class="review">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <p class="score">(10)</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col box-column">
+                    <a class="card-link" href="product-page.html"><div class="card mb-3">
+                        <img src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title-box">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            </div>
+                            <div class="price">
+                                <p class="card-text">$40.0</p>
+                            </div>
+                            <div class="bran">
+                                <p class="card-text brand">Zalora Cloth</p>
+                            </div>
+                            <div class="review">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <p class="score">(10)</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col box-column">
+                    <a class="card-link" href="product-page.html"><div class="card mb-3">
+                        <img src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title-box">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            </div>
+                            <div class="price">
+                                <p class="card-text">$40.0</p>
+                            </div>
+                            <div class="bran">
+                                <p class="card-text brand">Zalora Cloth</p>
+                            </div>
+                            <div class="review">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <p class="score">(10)</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col box-column">
+                    <a class="card-link" href="product-page.html"><div class="card mb-3">
+                        <img src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title-box">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            </div>
+                            <div class="price">
+                                <p class="card-text">$40.0</p>
+                            </div>
+                            <div class="bran">
+                                <p class="card-text brand">Zalora Cloth</p>
+                            </div>
+                            <div class="review">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <img class="star" src="aset/gambar/Star.png" alt="...">
+                                <p class="score">(10)</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </main>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

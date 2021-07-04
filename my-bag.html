@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="aset/css/style-my-bag.css">
+    <title>My Bag</title>
+</head>
+<body>
+    <!-- Navbar with profile ================================================================================================ -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-white" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="home-with-profile.html"><img src="aset/gambar/Group 1159.svg" alt="Blanja"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="filter-search">
+                    <form class="form-inline my-2 my-lg-0 ml-5">
+                        <input class="form-control search-bar mr-sm-2" type="search" placeholder="Search" aria-label="Search">    
+                    </form>
+                    <button class="btn btn-filter my-sm-0" type="submit" data-toggle="modal" data-target="#modal-filter"><img class="filter" src="aset/gambar/Vector.svg" alt=""></button>
+                </div>
+                <ul class="navbar-nav nav-list ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link mr-3" href="my-bag.html"><img src="aset/gambar/shopping-cart.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link mr-2" href="#"><img src="aset/gambar/bell.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#"><img src="aset/gambar/mail.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="profile.html"><img class="profile-navbar" src="aset/gambar/christian-buehner-DItYlc26zVI-unsplash 1.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal Navbar ================================================================================================= -->
+    <div class="modal fade" id="modal-filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Filter</h5>
+                <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="title-section">Colors</h3>
+                    <div class="color-choice">
+                        <input type="checkbox" class="checkmark color-modal-1">
+                        <input type="checkbox" class="checkmark color-modal-2">
+                        <input type="checkbox" class="checkmark color-modal-3">
+                        <input type="checkbox" class="checkmark color-modal-4">
+                        <input type="checkbox" class="checkmark color-modal-5">
+                    </div>
+                    <h3 class="title-section">Sizes</h3>
+                    <div class="size-choice">
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-1'><label class='string-check-box size-check-box-1' for="size-check-1">XS</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-2'><label class='string-check-box size-check-box-2' for="size-check-2">S</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-3'><label class='string-check-box size-check-box-3' for="size-check-3">M</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-4'><label class='string-check-box size-check-box-4' for="size-check-4">L</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='size-check-5'><label class='string-check-box size-check-box-5' for="size-check-5">XL</label>
+                    </div>
+                    <h3 class="title-section">Category</h3>
+                    <div class="category-modal">
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-1'><label class='string-check-box category-check-box-1' for="category-check-1">All</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-2'><label class='string-check-box category-check-box-2' for="category-check-2">Women</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-3'><label class='string-check-box category-check-box-3' for="category-check-3">Men</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-4'><label class='string-check-box category-check-box-4' for="category-check-4">Girl</label>
+                        <input type="checkbox" class="checkmark-size visually-hidden" id='category-check-5'><label class='string-check-box category-check-box-5' for="category-check-5">Boy</label>
+                    </div>
+                    <div class="brand-modal">
+                        <div class="brand-header-text">
+                            <h3 class="brand-section">Brand</h3>
+                            <p class="brand-category">adidas Originals, Jack & Jones, s.Oliver</p>
+                        </div>
+                        <button class="btn btn-brand-category" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="aset/gambar/colapseLogo.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Adidas Originals</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Jack & Jones</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> s.Oliver</label><br>
+                    </div>
+                </div>
+                <div class="modal-footer modal-confirm">
+                    <button type="button" class="btn btn-modal-discard btn-secondary" data-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-modal-apply btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================================================================================== -->
+    <main class="container">
+        <header class="title-bag">My Bag</header>
+        <section class="container-shop">
+            <div class="item-bag">
+                <div class="selected">
+                    <div class='selected-one'>
+                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                        <p class="selected-item">Select all items<span class="selected-total-item"> (2 items selected)</span></p>
+                    </div>
+                    <button class="selected-delete">Delete</button>
+                </div>
+                <div class="item">
+                    <input class="form-check-item" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                    <img class="item-image" src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="item-name">
+                        <p class="item-title">Men's formal suit - Black</p>
+                        <p class="item-brand">Zalora Cloth</p>
+                    </div>
+                    <div class="item-amount">
+                        <div class="col sizing">
+                            <div class="minus-box col-margin">
+                                <img class='gambar-indikator-minus'src="aset/gambar/minus (2).svg" alt="">
+                            </div>
+                            <p class="size-text col-margin">1</p>
+                            <div class="plus-box col-margin">
+                                <img class='gambar-indikator-plus'src="aset/gambar/plus.svg" alt="">
+                            </div>                            
+                        </div>
+                    </div>
+                    <p class="item-price">$20.0</p>
+                </div>
+                <div class="item">
+                    <input class="form-check-item" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                    <img class="item-image" src="aset/gambar/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png" alt="">
+                    <div class="item-name">
+                        <p class="item-title">Men's formal suit - Black</p>
+                        <p class="item-brand">Zalora Cloth</p>
+                    </div>
+                    <div class="item-amount">
+                        <div class="col sizing">
+                            <div class="minus-box col-margin">
+                                <img class='gambar-indikator-minus'src="aset/gambar/minus (2).svg" alt="">
+                            </div>
+                            <p class="size-text col-margin">1</p>
+                            <div class="plus-box col-margin">
+                                <img class='gambar-indikator-plus'src="aset/gambar/plus.svg" alt="">
+                            </div>                            
+                        </div>
+                    </div>
+                    <p class="item-price">$20.0</p>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="summary-box summary-item">
+                    <p class="selected-item summary-item">Shopping Summary</p>
+                    <div class="price summary-item">
+                        <p class="selected-total-item">Total Price</p>
+                        <p class="item-price">$40.0</p>
+                    </div>
+                    <a href="checkout.html" class="summary-confirmation summary-item">Buy</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
