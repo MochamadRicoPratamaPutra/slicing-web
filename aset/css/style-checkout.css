@@ -1,0 +1,751 @@
+/* Navbar ====================================================================================*/
+.navbar{
+    font-family: 'Metropolis';
+    box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
+}
+.container{
+    background: #FFFFFF;
+}
+/* search bar dan filter */
+.form-inline .search-bar{
+    height: 40px;
+    width: 507px;
+    border: 1px solid #8E8E93;
+    border-radius: 23px;
+}
+.filter{
+    height: 16.7px;
+    width: 15px;
+}
+.filter-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* login dan signup button */
+.login{
+    /* height: 36px;
+    width: 100px; */
+    padding: 5px 30px !important;
+    background: #DB3022;
+    /* border: 1px solid #9B9B9B; */
+    box-sizing: border-box;
+    border-radius: 24px;
+    text-align: center;
+    color: white !important;
+    font-size: 14px;
+    font-family: 'Metropolis';
+}
+.signup{
+    padding: 5px 26px !important;
+    border: 1px solid #9B9B9B;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Metropolis';
+}
+.profile-navbar{
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.btn-filter{
+    /* background: transparent; */
+    /* border: none !important; */
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border: 1px solid #8E8E93;
+    border-radius: 12px;
+}/* Modal =============================================== */
+/* modal content */
+.title-section{
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 36px;
+}
+.color-choice{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 46px;
+    /* justify-content: space-evenly; */
+}
+.color{
+    width: 36px;
+    height: 36px;
+    background: black;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 46px;
+}
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+.checkmark {
+    height: 36px;
+    width: 36px;
+    /* background-color: red; */
+    -webkit-appearance: none;
+    border-radius: 50%;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    border: 3px solid #fff;
+    margin-left: 20px;
+}
+.checkmark:checked{
+    box-shadow: 0px 0px 0px 1px #DB3022;
+}
+.color-modal-1{
+    background-color: black;
+}
+.color-modal-2{
+    background-color: 0px 0px 0px 100px #fff;
+    box-shadow: 2px 2px 4px #000000
+}
+.color-modal-3{
+    background: #B82222;
+}
+.color-modal-4{
+    background: #BEA9A9;
+}
+.color-modal-5{
+    background: rgba(226, 187, 141, 1);
+}
+.color-modal-6{
+    background: rgba(21, 24, 103, 1);
+}
+/* .checkmark-size {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    border: 3px solid black;
+    margin-left: 20px;
+} */
+/* .checkmark-size:checked{
+    box-shadow: 0px 0px 0px 1px #DB3022;
+    background-color: #DB3022;
+    color: white;
+} */
+.string-check-box{
+    font-family: Metropolis;
+    background:white;
+    color:black;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    border: 0.4px solid #9B9B9B;
+    margin-right: 20px;
+}
+#size-check-1:checked ~ .size-check-box-1 {
+    background:red;
+    font-family: Metropolis;
+    color:white;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}#size-check-2:checked ~ .size-check-box-2 {
+    background:red;
+    font-family: Metropolis;
+    color:white;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}#size-check-3:checked ~ .size-check-box-3 {
+    background:red;
+    font-family: Metropolis;
+    color:white;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}#size-check-4:checked ~ .size-check-box-4 {
+    background:red;
+    font-family: Metropolis;
+    color:white;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}#size-check-5:checked ~ .size-check-box-5 {
+    background:red;
+    font-family: Metropolis;
+    color:white;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.size-choice{
+    margin-left: 26px;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+.size-choice-modal{
+    margin-right: 16px;
+    border: 0.4px solid #9B9B9B;
+    color: black;
+}
+.category-modal{
+    margin-left: 26px;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+#category-check-1:checked ~ .category-check-box-1 {
+    background:red;
+    font-family: Metropolis;
+    color:white;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}#category-check-2:checked ~ .category-check-box-2 {
+    background:red;
+    font-family: Metropolis;
+    color:white;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}#category-check-3:checked ~ .category-check-box-3 {
+    background:red;
+    font-family: Metropolis;
+    color:white;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}#category-check-4:checked ~ .category-check-box-4 {
+    background:red;
+    font-family: Metropolis;
+    color:white;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}#category-check-5:checked ~ .category-check-box-5 {
+    background:red;
+    font-family: Metropolis;
+    color:white;
+    padding: 10px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.brand-modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn-brand-category{
+    border: none;
+    /* margin-right: auto; */
+}
+.brand-section{
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 3px;
+}
+.brand-category{
+    font-family: Metropolis;
+    font-size: 11px;
+    line-height: 11px;
+    color: #9B9B9B;
+}
+/* .modal-bordering{
+    background: #F4F4F4;
+} */
+/* modal footer */
+.modal-confirm{
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-modal-discard{
+    padding: 10px 50px;
+    background-color: white;
+    border: 1px solid #222222;
+    box-sizing: border-box;
+    border-radius: 24px;
+    font-family: 'Metropolis';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #222222;;
+}
+.btn-modal-apply{
+    padding: 10px 50px;
+    background: #DB3022;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+/* container =========================================================================================================================================================================== */
+.content{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.title{
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 34px;
+    color: #222222;
+    margin-bottom: 30px;
+}
+.sub-title{
+    font-family: Metropolis;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    margin-bottom: 16px;
+}
+.address-user{
+    font-family: 'Metropolis';
+    height: 190px;
+    width: 720px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.25);
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.title-box{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.address-detail{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #222222;
+    margin: 10px 35px 20px 30px;
+}
+.btn-address-user{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #222222;
+    padding-left: 23px;
+    padding-right: 23px;
+    border: 1px solid #9B9B9B;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #fff;
+    color: #9B9B9B;
+    margin-left: 30px;
+}
+/* item ================================================================================================================================================================================================================== */
+.item{
+    margin-bottom: 20px;
+    width: 720px;
+    height: 126px;
+    /* border: 1px solid black; */
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.25);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 24px 22px;
+}
+.form-check-item{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.item-image{
+    height: 69px;
+    width: 69px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.item-name{
+    font-family: 'Metropolis';
+    margin-left: -300px;
+
+}
+.item-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.item-brand{
+    font-family: Metropolis;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #9B9B9B;
+}
+.item-amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+.item-amount p{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+.item-amount img{
+    margin-right: 20px;
+}
+.item-price{
+    font-family: Metropolis;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* payment ======================================================================================================================================================================================================================================= */
+.shopping-data{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px black; */
+}
+.payment{
+    margin-left: 50px;
+    height: 256px;
+    width: 370px;
+    /* border: 1px solid black; */
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.25);
+    border-radius: 4px;
+    font-family: 'Metropolis';
+}
+.title-payment-box{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-bottom: 30px;
+}
+.order-delivery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.order-or-delivery{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #9B9B9B;
+}
+.amount-of-money{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #222222;
+}
+.summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 30px;
+}
+.shopping-summary{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+}
+.total{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #DB3022;
+}
+.btn-payment{
+    padding: 8px 108px 8px 108px;
+    background: #DB3022;
+    border-radius: 25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+/* Modal address ==================================================================================================================================================================================== */
+.modal-checkout-title{
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: 230px;
+}
+.adding-new-address{
+    padding: 34px 258px;
+    border: 1px dashed #9B9B9B;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #9B9B9B;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 34px;
+    background-color: #fff;
+}
+.address-user-old{
+    margin-left: 50px;
+    margin-right: 50px;
+    background: #FFFFFF;
+    border: 1px solid #DB3022;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.btn-address-user-old{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #DB3022;
+    background: none;
+    border: none;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+/* Modal 2 address ==================================================================================================================================================================================== */
+.label-form-modal{
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9B9B9B;
+}
+.placeholder-form-modal{
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(212, 212, 212, 1);
+}
+.checkbox-modal-address{
+    margin-left: 15px;
+}
+.label-primary-address{
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9B9B9B;
+    margin-left: 13px;
+}
+.btn-cancel-new-address{
+    border: 1px solid #9B9B9B;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background: #FFFFFF;
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9B9B9B;
+    padding: 8px 57px;
+}
+.btn-save-new-address{
+    box-sizing: border-box;
+    border-radius: 24px;
+    background: #DB3022;
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 8px 64px;
+}
+/* modal payment =================================================================================================================================================================================== */
+.modal-payment-title{
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;/* identical to box height */
+    color: #222222;
+}
+.content-modal{
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 28px;
+}
+.payment-title{
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+}
+.payment-choice-modal{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.img-payment{
+    object-fit: scale-down;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.name-payment{
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    /* padding-left: 60px; */
+}
+.check-payment p{
+    margin-right: 100px;
+}
+@media (max-width: 576px){
+    .nav-list{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar-collapse form{
+        width: 50%;
+    }
+    .filter-search{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 0px;
+        width: 550px;
+    }
+    .content{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .shopping-data{
+        display: flex;
+        flex-direction: column;
+    }
+    .address-user{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 220px;
+    }
+    .item{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-name{
+        margin-left: 0px;
+    }
+    .adding-new-address{
+        padding: 20px 100px;
+    }
+    .modal-checkout-title{
+        margin-left: 50px;
+    }
+    .payment{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
